@@ -86,6 +86,7 @@ async function run() {
       });
       res.send(result);
     });
+    
     // all order
     app.get("/allOrders", async (req, res) => {
       const result = await ordersCollection.find({}).toArray();
