@@ -62,10 +62,7 @@ async function run() {
       const product = await productsCollection.findOne(query);
       res.json(product);
     });
-    // MY ORDERS
-    // app.get('/myOrders/:email',)
-
-
+   
     // POST API
     app.post('/productSymaOfficial', async (req, res) => {
       const product = req.body;
