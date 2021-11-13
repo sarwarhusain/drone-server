@@ -90,7 +90,6 @@ async function run() {
     });
 
     // my confirmOrder
-
     app.get('/myOrders/:email', async (req, res) => {
       const result = await ordersCollection
         .find({ email: req.params.email })
